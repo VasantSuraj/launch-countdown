@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #1e1b4b;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 560px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.intro {
+  color: #c7d2fe;
+  margin-bottom: 28px;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.unit {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 18px 8px;
+}
+
+.unit span {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.unit small {
+  color: #c7d2fe;
+  font-size: 13px;
+}
+
+#done {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0 6px;
+}
+
+input {
+  width: 100%;
+  font: inherit;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 16px;
+  width: 100%;
+  background: #818cf8;
+  color: #1e1b4b;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a5b4fc;
+}
+
+@media (max-width: 480px) {
+  .unit span {
+    font-size: 28px;
+  }
+}
